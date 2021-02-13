@@ -1,6 +1,20 @@
 //------------------------------------------------------------------------------------
 // Check if two people starting from different points ever meet
 //------------------------------------------------------------------------------------
+/*
+There are two people that start from two different positions, 
+let’s say x1 and x2. Both can jump v1 and v2 meters ahead respectively. 
+We have to find if both will ever meet given that the number of jumps taken by both has to be same.
+
+Input  : x1 = 5, v1 = 8, x2 = 4, v2 = 7
+Output : No
+Explanation: The first person is starting ahead of the second one.
+and his speed is also greater than the second one, so they will never meet.
+
+Input  : x1 = 6, v1 = 6, x2 = 4, v2 = 8
+Output : Yes
+*/
+//------------------------------------------------------------------------------------
 
 #include <bits/stdc++.h>
 using namespace std ;
