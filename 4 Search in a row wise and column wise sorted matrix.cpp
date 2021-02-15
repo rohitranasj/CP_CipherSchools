@@ -55,12 +55,12 @@ void search(const vector<vector<int>>& mat, int key){ //m*n
     	if(mat[i][j]<key) i++; // we need larger element so move down
     	else if(mat[i][j]>key) j--; // we need smaller element so move left
     	else { 
-			cout<<i<<" "<<j<<"\n"; // key found
-			found=true;
-			break;
-		}
+		cout<<i<<" "<<j<<"\n"; // key found
+		found=true;
+		break;
 	}
-	if(!found) cout<<"Absent"<<"\n";
+    }
+    if(!found) cout<<"Absent"<<"\n";
 }
 
 //------------------------------------------------------------------------------------
@@ -69,11 +69,12 @@ void search(const vector<vector<int>>& mat, int key){ //m*n
 int main(){
     FAST_IO
     vector<vector<int>> mat = { { 10, 20, 30, 40 },
-			                    { 15, 25, 35, 45 },
-			                    { 27, 29, 37, 48 },
-			                    { 32, 33, 39, 50 } };
-	int key;
-	cin>>key;		                    
+			        { 15, 25, 35, 45 },
+			        { 27, 29, 37, 48 },
+			        { 32, 33, 39, 50 } };
+   
+    int key;
+    cin>>key;		                    
     search(mat, key);
     return 0;
 }
