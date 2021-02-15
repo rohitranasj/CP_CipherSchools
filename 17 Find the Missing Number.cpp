@@ -58,7 +58,7 @@ int getMissingNo(int arr[], int n){
 //---------------------------------------------------------
 int main() {
 	int arr[] = {1, 2, 3, 5};
-    cout<<getMissingNo(arr,sizeof(arr)/sizeof(arr[0]));
-    return 0;
+    	cout<<getMissingNo(arr,sizeof(arr)/sizeof(arr[0]));
+    	return 0;
 }
 //---------------------------------------------------------
