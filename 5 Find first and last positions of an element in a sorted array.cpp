@@ -62,9 +62,9 @@ void findFirstAndLast(int arr[], int n, int key){
     	else{
     		if(mid==0 or arr[mid-1]<arr[mid]){
     			first=mid;
-				break;
-			}
-			else high=mid-1;
+			break;
+		}
+		else high=mid-1;
 		}
 	}
 	//finding last occurence
@@ -76,9 +76,9 @@ void findFirstAndLast(int arr[], int n, int key){
     	else{
     		if(mid==n-1 or arr[mid+1]>arr[mid]){
     			last=mid;
-				break;
-			}
-			else low=mid+1;
+			break;
+		}
+		else low=mid+1;
 		}
 	}
     cout<<first<<" "<<last<<"\n";
